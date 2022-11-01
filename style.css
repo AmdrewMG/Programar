@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body{
+    font-family: 'Press Start 2P', cursive;
+    background-color:#005555 ;
+    font-weight: 100vh;
+}
+
+.titulo {
+    color: white;
+    font-size: 32px;
+}
+
+.subtitulo{
+    color: white;
+    font-size: 20px;
+}
+
+#selec_mascota{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+}
+
+.tarjetas, .botonesJugadores{
+    display:flex; 
+    gap: 10px;
+}
+
+.tarjeta-de-mokepon{
+    width: 180px;
+    height: 100px;
+    background: #069A8E;
+    padding: 10px; 
+    box-sizing: border-box;
+    border-radius:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.tarjeta-de-mokepon img{
+    width: 80px;
+}
+
+input{
+    display: none; 
+}
+input:checked + label{
+   background: #A1E3D8;
+}
+ 
+#boton-mascota{
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    margin-top: 30px;
+} 
+
+#selec_ataque{
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-de-ataque{
+    background:#069A8E ;
+    padding: 10px; 
+    box-sizing: border-box;
+    border-radius:20px;
+    border-color: transparent;
+    width: 100px;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+}
+
+#mensajes{
+    width: 200px;
+    background: #A1E3D8;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+#boton-reiniciar{
+    border: transparent;
+    color: #005555 ;
+    font-family: 'Press Start 2P', cursive;
+
+}
+.ataques{
+    display:grid;
+    grid-template-columns: 180px 180px;
+    text-align: center;
+}
+
+.ataques-jugador, .ataques-enemigo{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+#ver-mapa{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#ver-mapa button{
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    margin: 10px 0;
+}
+
+
+/*Todo lo que esté dentro de media será hasta los pixeles indicados*/
+@media (max-width:560px){
+    .tarjetas,.botonesJugadores {
+        flex-direction: column;
+    }
+    
+}
+
+@media (max-width:300px){
+    #ver-mapa div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+}
+
+
